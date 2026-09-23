@@ -48,23 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Language Switcher (Client-side demo)
-  const langButtons = document.querySelectorAll('.lang-btn');
-  langButtons.forEach(btn => {
-    btn.addEventListener('click', function() {
-      const targetLang = this.dataset.lang;
-      
-      // Remove active class from all buttons
-      langButtons.forEach(b => b.classList.remove('active'));
-      // Add active class to clicked button
-      this.classList.add('active');
-      
-      // In production, this would redirect to the actual language page
-      // window.location.href = `/${targetLang}/`;
-      console.log(`Switching to language: ${targetLang}`);
-    });
-  });
-
   // Smooth Scroll for Anchor Links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -92,21 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const yearElement = document.querySelector('.current-year');
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
-  }
-
-  // Performance: Preload critical resources hint
-  if ('link' in document) {
-    const preloadLinks = [
-      { rel: 'preload', href: '/assets/css/style.css', as: 'style' }
-    ];
-    
-    preloadLinks.forEach(link => {
-      const linkEl = document.createElement('link');
-      linkEl.rel = link.rel;
-      linkEl.href = link.href;
-      linkEl.as = link.as;
-      document.head.appendChild(linkEl);
-    });
   }
 
   console.log('Gongbei Port Learning Hub initialized successfully');
