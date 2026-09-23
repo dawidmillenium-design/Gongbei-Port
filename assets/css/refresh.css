@@ -36,3 +36,12 @@ footer{background:#102f43!important;color:#ecf5f4!important}
 footer a{color:#c9eae9!important}
 @media(max-width:700px){.nav-container{flex-wrap:wrap;gap:1rem}.lang-switcher{flex-wrap:wrap}.hero{border-radius:0 0 20px 20px}body>nav ul{gap:.65rem!important}body>nav li{margin:0!important}.content-grid{grid-template-columns:1fr!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.content-card{transition:none}}
+
+/* Language navigation for translated guide pages */
+.guide-language-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;max-width:1120px;margin:auto;padding:.8rem 1rem!important}
+.guide-language-list{display:flex;gap:.5rem;flex-wrap:wrap}
+.guide-language-nav a{color:#164456!important;text-decoration:none!important}
+.guide-back{font-weight:700}
+.guide-lang{display:inline-block;padding:.42rem .78rem;border:1px solid #cbd9da;border-radius:999px;line-height:1.2}
+.guide-lang:hover,.guide-lang:focus-visible{background:#e5f3f1}
+.guide-lang.active{background:#102f43;color:#fff!important;border-color:#102f43}
