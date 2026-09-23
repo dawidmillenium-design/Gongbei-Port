@@ -45,3 +45,17 @@ footer a{color:#c9eae9!important}
 .guide-lang{display:inline-block;padding:.42rem .78rem;border:1px solid #cbd9da;border-radius:999px;line-height:1.2}
 .guide-lang:hover,.guide-lang:focus-visible{background:#e5f3f1}
 .guide-lang.active{background:#102f43;color:#fff!important;border-color:#102f43}
+
+/* Abstract Hong Kong–Zhuhai–Macao Bridge graphic. Decorative, not a route map. */
+.bridge-graphic{position:relative;isolation:isolate;width:min(1120px,calc(100% - 32px));height:clamp(140px,20vw,190px);margin:18px auto 28px;overflow:hidden;border:1px solid #cbdfe1;border-radius:20px;background:linear-gradient(180deg,#f0f8f7 0%,#f9fbf5 58%,#d7ecec 59%,#e5f3f1 100%);box-shadow:0 10px 24px rgba(16,47,67,.05)}
+.bridge-graphic span{position:absolute;display:block;pointer-events:none}
+.bridge-horizon{top:58%;left:0;width:100%;height:1px;background:#b5d8d7}
+.bridge-water{left:0;right:0;bottom:23%;height:2px;background:repeating-linear-gradient(90deg,transparent 0 20px,#9bc7c9 20px 50px,transparent 50px 80px);opacity:.75}
+.bridge-deck{left:8%;right:8%;top:53%;height:8px;background:#244e5c;border-radius:3px;box-shadow:0 3px 0 #aec8c9}
+.bridge-pylon{top:20%;width:9px;height:35%;background:#244e5c;border-radius:4px 4px 0 0;z-index:2}
+.bridge-pylon-left{left:30%}.bridge-pylon-right{right:30%}
+.bridge-cable{top:23%;height:32%;width:41%;border-top:3px solid #348389;border-radius:50% 50% 0 0;opacity:.85}
+.bridge-cable-left{left:9%;transform:rotate(3deg)}.bridge-cable-right{right:9%;transform:rotate(-3deg)}
+.bridge-graphic figcaption{position:absolute;bottom:10%;left:1rem;right:1rem;text-align:center;color:#244e5c;font-size:.8rem;font-weight:700;letter-spacing:.04em;line-height:1.35}
+@media(max-width:600px){.bridge-graphic{margin:12px auto 20px;border-radius:14px}.bridge-graphic figcaption{bottom:8%;font-size:.72rem}.bridge-pylon{width:7px}}
+@media print{.bridge-graphic{display:none}}
