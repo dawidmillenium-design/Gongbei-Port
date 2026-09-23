@@ -1,58 +1,49 @@
-# Dependencies
-node_modules/
-
-# Build artifacts
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+*.o
+*.obj
 dist/
 build/
-target/
+*.class
+*.exe
+*.dll
+*.so
+*.a
+*.out
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
+# Dependencies
 .venv/
-.venv.bak/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+venv/
+node_modules/
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
+
+# Logs and temp files
 *.log
 *.tmp
 *.swp
-.DS_Store
-Thumbs.db
+*.swo
 
 # Environment
 .env
 .env.local
-.env.dev
-.env.production
-.env.test
 .env.*
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# Logs
-*.log
+# System files
+.DS_Store
+Thumbs.db
 
 # Coverage
 coverage/
 htmlcov/
-.pytest_cache/
-.hypothesis/
+.coverage
 
 # Compressed files
 *.zip
@@ -77,17 +68,3 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# Other common ignores
-*.out
-*.exe
-*.dll
-*.so
-*.a
-*.obj
-*.class
-.DS_Store
-Thumbs.db
-*.tmp
-temp/
-tmp/
